@@ -1,0 +1,35 @@
+{   
+    "name": "RegSeek", 
+    "version": "1.0", 
+    "description": "Search via RegExp", 
+    "manifest_version": 2,
+    "permissions": ["activeTab", "declarativeContent","storage","notifications"],
+
+"icons": {
+      "16": "images/icon_16.png",
+      "32": "images/icon_32.png",
+      "48": "images/icon_48.png"
+    },
+
+"browser_action": { 
+      "default_icon": {
+        "16": "images/icon_16.png",
+        "32": "images/icon_32.png",
+        "48": "images/icon_48.png"
+      },
+      "default_popup":"popup.html" 
+    },
+
+"background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+
+    "content_scripts": [{
+      "matches": ["http://*/*","https://*/*"],
+      "js":      ["jquery.min.js","bootstrap/js/bootstrap.js","content.js"],
+      "css": ["bootstrap/css/bootstrap.css"]
+     }]
+
+    }
+

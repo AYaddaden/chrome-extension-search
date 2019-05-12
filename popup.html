@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<script src="jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<style>
+    body {
+        margin:0;   
+        width: 25em;
+    }
+    #title{
+        text-align: center;
+        color:rgb(0, 0, 0);
+    }
+    input {
+      
+        margin-left: 2em ;
+    }
+    
+    button{
+        float: right;
+        margin-top: 1em;
+        margin-right: -1em;
+    }
+    
+    .form-check{
+        float: right;
+        margin-right: 1em;
+    }
+    .jumbotron{
+        color:rgb(53,69,155);
+    }
+</style>
+
+<body>
+    
+    <h3 id="title">Insert a regular expression</h3>  
+    
+    <div class="jumbotron">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="regExp" placeholder="example: [0-9]+" aria-label="" aria-describedby="basic-addon2">
+            <button class="btn btn-primary" id="button" type="button">Search</button>
+        </div>
+            
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="activ" checked>
+        <label class="form-check-label" for="defaultCheck1">
+          Activer
+        </label>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
